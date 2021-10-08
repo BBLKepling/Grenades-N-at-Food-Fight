@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="XmlExtensions.FindMod">
+    <mods>
+        <li>CETeam.CombatExtended</li>
+    </mods>
+    <packageId>true</packageId>
+
+        <!-- == Combat Extended == -->
+
+      <caseTrue>
+      </caseTrue>
+
+        <!-- == Vanilla == -->
+
+      <caseFalse>
+      <Operation Class="PatchOperationSequence">
+      <operations>
+
+        <!-- == Optional Verb Setting == -->
+
+<li Class="XmlExtensions.CreateSettings">
+    <modId>GNAT_FoodFight</modId>
+    <label>GNAT Food Fight</label>
+    <settings>
+        <li Class="XmlExtensions.Setting.Checkbox">
+          <key>Loop_Verb</key>
+          <label>Vanilla/Throw Them Compatability Mode (Requires game restart to take effect)</label>
+          <defaultValue>false</defaultValue>
+          <tooltip>Changes verbClass from Verb_ShootOneUse to Verb_LaunchProjectile for vanilla behavior.</tooltip>
+        </li>
+    </settings>
+</li>
+
+      </operations>
+      </Operation>
+      </caseFalse>
+
+        <!-- == End Vanilla == -->
+
+  </Operation>
+</Patch>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grenades N'at Food Fight</name>
+  <author>bblkepling</author>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <packageId>bblkepling.GnatFoodFight</packageId>
+  <description>		
+Makes some food item useable as throwable weapons. This is a stand alone mod in the GNAT series.
+
+Includes Combat Extended Support
+
+Patched:
+Vanilla
+-Potatoes
+-Corn
+
+Vanilla Plants Expanded
+-Apples
+-Cabbage
+-Eggplants
+-Onions
+-Oranges
+-Pears
+-Prickly Pears
+-Pumpkins
+-Tomatoes
+	</description>
+  <modDependencies>
+    <li>
+        <packageId>Imranfish.XMLExtensions</packageId>
+	<displayName>XML Extensions</displayName>
+	<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Imranfish.XMLExtensions</li>
+  </loadAfter>
+</ModMetaData>
